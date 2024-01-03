@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Home | Central Book Library{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="row">
+    <div class="col-2">
+        <h1>WELCOME TO<br> Central Book Library!</h1>
+        <p>A writer only begins a book.<br>A reader finishes it.</p>
+        <a href="search_books" class="btn">Search A Book &#8600;</a>
+        <a href="add_book" class="btn">Add A Book &#43;</a><br>
+        <a href="list_books" class="btn">List Of Books &#10003;</a>
+    </div>
+    <div class="col-2">
+        <img src="{% static 'images/image1.jpg' %}">
+    </div>
+</div>
+{% endblock %}
